@@ -11,17 +11,26 @@ ul li {
     list-style-type: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
 
     font-family: 'Nunito Sans', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 /*........*/
 /* ReUsable Components */
 /*........*/
 .row {
-    max-width: 1140px;
+    max-width: 114rem;
     margin: 0 auto;
+}
+
+section {
+    padding: 8rem;
 }
 
 .btn:link,
@@ -29,11 +38,11 @@ body {
 .btn {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #ffffff;
     background: #10c9c3;
-    padding: 20px 50px;
-    margin-top: 20px;
+    padding: 2rem 5rem;
+    margin-top: 2rem;
     display: inline-block;
 }
 
@@ -41,48 +50,50 @@ body {
 /* Header Section */
 /*........*/
 h1 {
-    font-size: 38px;
+    font-size: 3.8rem;
     color: #191919;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .hero-text-box {
     display: block;
-    width: 500px;
-    margin-left: 400px;
+    width: 50rem;
+    margin-left: 40rem;
 }
 
 header {
     background: linear-gradient(rgb(201, 201, 201, .5), rgb(201, 201, 201, .5)), url(img/services.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     height: 85vh;
     font-family: 'Montserrat', sans-serif;
     position: relative;
 }
 
 .logo {
-    height: 25px;
-    width: 31px;
-    margin-top: 35px;
+    height: 2.5rem;
+    width: 3.1rem;
+    margin-top: 3.5rem;
     float: left;
 }
 
 .main-nav {
     float: right;
-    margin-top: 40px;
+    margin-top: 4.0rem;
 }
 
 .main-nav li {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 3.5rem;
 }
 
 .main-nav li:first-child {
-    margin-left: 0px;
+    margin-left: 0rem;
 }
 
 .main-nav li a:link,
@@ -90,7 +101,7 @@ header {
     color: #191919;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 1.2rem;
     transition: .3s;
 }
 
@@ -110,3 +121,28 @@ header {
     transform: translate(-80%, -20%);
     text-align: left;
 }
+
+/*........*/
+/* About Us Section */
+/*........*/
+.about-us {
+    background: #ffffff;
+    text-align: center;
+    height: 45vh;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-details {
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*........*/
+/* Skills Section */
+/*........*/
